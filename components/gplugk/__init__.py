@@ -36,7 +36,7 @@ CONFIG_SCHEMA = cv.All(
 )
 
 FINAL_VALIDATE_SCHEMA = uart.final_validate_device_schema(
-    "gplugk", baud_rate=2400, require_rx=True
+    "gplugk", baud_rate=9600, require_rx=True
 )
 
 
