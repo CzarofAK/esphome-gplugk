@@ -2,6 +2,12 @@
 
 ![Home Assistant Dashboard showing active power sensors from the gPlugK smart meter integration](ha-dashboard.png)
 
+> [!WARNING]
+> **Safety & liability / Sicherheit & Haftung** – Private hobby fork, provided "as is" and used **at your own risk**.
+> This is a personal fork of [jluthiger/esphome-gplugk](https://github.com/jluthiger/esphome-gplugk) (only the baud rate was changed for Swiss KMP meters). The disclaimer covers the changes made in this fork; it does not replace the upstream license.
+> The adapter reads the **customer interface of your electricity meter**. The meter belongs to your grid operator – never open it or tamper with seals. Keep the decryption key from your grid operator private and never commit it.
+> See [DISCLAIMER.md](DISCLAIMER.md) (EN/DE).
+
 ## Overview
 
 This project connects a Kamstrup Omnipower smart meter to Home Assistant using three main components that work together in a pipeline:
@@ -272,4 +278,4 @@ The live log stream shows UART reception, decryption status, and sensor values. 
 
 ## License
 
-MIT License -- see [LICENSE](components/gplugk/LICENSE).
+MIT License (unchanged from upstream, © Jürg Luthiger) -- see [LICENSE](components/gplugk/LICENSE). Use at your own risk – see [DISCLAIMER.md](DISCLAIMER.md).
